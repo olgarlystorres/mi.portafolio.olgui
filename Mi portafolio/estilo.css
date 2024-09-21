@@ -1,0 +1,197 @@
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+.item {
+    flex: 1 1 200px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;}
+     h1 {
+        font-size: 2rem; /* Disminuye el tamaño en pantallas pequeñas */
+    }
+    p {
+        font-size: 0.9rem; /* También disminuye el tamaño del texto */
+    }
+}
+
+
+
+/*@media (max-width: 768px) {
+    body {
+      font-size: 14px;}}*/
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 1080px;*/
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+
+.selected{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+.boton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover{
+    text-decoration: underline;
+}
+
+#portada{
+    text-align: center;
+    background-image: url(portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    padding: 40px 20px;
+
+}
+
+#portada img{
+    height: 200px;
+    border-radius: 100px;
+    max-width: 100%;
+    
+}
+
+#portada h1, h2 {
+    color: white;
+}
+
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+#portada div {
+    margin-top: 40px;
+}
+
+#portada nav {
+    text-align: end;
+}
+
+#sobre_mi img {
+    height: 450px;
+    max-width: 100%;
+
+}
+
+section{
+    padding: 50px 20px;
+}
+
+#sobre_mi {
+    
+    display: flex;
+    background-color: beige;
+}
+
+#sobre_mi #datos_sobre_mi {
+    display: flex;
+    
+}
+
+
+#sobre_mi #datos_sobre_mi div {
+    padding: 0 20px;
+    width: 280px;
+}
+p{
+    font-size: 20px;
+}
+
+em{
+    color: red;
+    font-weight: bold;
+}
+
+#experiencia {
+    text-align: center;
+    display: flex;
+ 
+
+}
+
+#experiencia p {
+    text-align: left;
+    width: 400px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#experiencia div div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#experiencia img {
+  
+   max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+footer{
+    text-align: center;
+    background-color: #8A6642;
+    padding: 10px 0;
+}
+
+footer a{
+ display: block;
+ padding: 5px 0px;
+}
+
+
+#contacto div h1{
+color: white;
+}
+
+@media (max-width: 768px) {
+    #sobre_mi {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas para que se vaya adaptando*/
+        align-items: center; /* Centrar los elementos */
+    }
+
+    #sobre_mi #datos_sobre_mi {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; 
+        padding: 10px; /* Ajustar espaciado */
+    }
+
+    #experiencia p {
+        text-align: center; /* Centrar texto en pantallas pequeñas */
+        width: 90%; /* Ajustar ancho */
+        margin: 0 auto; /* Centrar */
+    }}
